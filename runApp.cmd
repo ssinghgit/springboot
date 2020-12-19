@@ -1,0 +1,1 @@
+C:\Users\17328\.jdks\corretto-11.0.9.1\bin\java.exe -jar C:\Users\17328\IdeaProjects\demo\target\demo-0.0.1-SNAPSHOT.jar
