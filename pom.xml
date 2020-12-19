@@ -76,12 +76,22 @@
     <build>
         <plugins>
         <plugin>
+
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
             <executions>
                 <execution>
                     <configuration>
                         <mainClass>com.example.demo.DemoApplication</mainClass>
+                    </configuration>
+                </execution>
+                <execution>
+                    <id>repackage</id>
+                    <goals>
+                        <goal>repackage</goal>
+                    </goals>
+                    <configuration>
+                        <finalName>springboot</finalName>
                     </configuration>
                 </execution>
             </executions>
