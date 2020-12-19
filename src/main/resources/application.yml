@@ -4,12 +4,12 @@ server:
     context-path: "/mynewapp"
 management:
   endpoints:
-    enabled-by-default: true
-    web.exposure.include: "*"
+   enabled-by-default: true
+   web.exposure.include: "*"
 security.ignored: /**
 logging:
   level:
-    org.springframework: TRACE
+    org.springframework: INFO
 spring:
   datasource:
     url: "jdbc:h2:mem:testdb"
@@ -20,9 +20,9 @@ spring:
   security:
     user.name: vikram
     user.password: vikram
-    roles: ROLE_VIEWER
+    user.roles: VIEWER,WRITER
 commmonServerConfig:
-  jpaEnabled: false
+  jpaEnabled: true
   mycustomSql: |
     select * from
       employees where login='ssingh'

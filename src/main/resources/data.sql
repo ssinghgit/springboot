@@ -6,9 +6,9 @@ create table Employee
     department varchar(20)
 );
 
-create table Employee_Audit
+create table EmployeeAudit
 (
-    audit_id         INT AUTO_INCREMENT PRIMARY KEY,
+    auditId         INT AUTO_INCREMENT PRIMARY KEY,
     id          INT ,
     name       varchar(20),
     department varchar(20)
